@@ -166,7 +166,7 @@ for iSubj = 1:length(subjects)
 
             % Output filename for FIR and PSC
             [~, roiName, ~] = fileparts(roiPath);
-            outputFile = fullfile(outDir, sprintf('%s_%s_%s_FIR_PSC.csv', subjects[iSubj], visits[iVisit], roiName));
+            outputFile = fullfile(outDir, sprintf('%s_%s_%s_FIR_PSC.csv', subjects{iSubj}, visits{iVisit}, roiName));
             writeCsv(outStruct, outputFile);
         end
     end
