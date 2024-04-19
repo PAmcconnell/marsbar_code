@@ -21,7 +21,7 @@
 %
 % Process:
 %   1. Initialize FIR parameters, define output directory, and read the subject list.
-%   2. Check and convert .nii ROI files to .mat format if necessary.
+%   2. Check and convert .nii ROI files to .mat format if necessary (as per https://marsbar-users.narkive.com/eq9aCFXa/roi-mat-nii)
 %   3. Process each subject by reading their SPM.mat file for each visit.
 %   4. Load and process each ROI.mat file to extract both PSC and FIR time courses for predefined conditions.
 %   5. Output results to CSV files.
